@@ -40,7 +40,7 @@ class MealDetailsScreen extends StatelessWidget {
             Text(
               'Ingreedients',
               style: Theme.of(context).textTheme.titleLarge!.copyWith(
-                color: Theme.of(context).colorScheme.onBackground,
+                color: Theme.of(context).colorScheme.onSurface,
               ),
             ),
             SizedBox(
@@ -60,7 +60,7 @@ class MealDetailsScreen extends StatelessWidget {
             Text(
               'Steps',
               style: Theme.of(context).textTheme.titleLarge!.copyWith(
-                color: Theme.of(context).colorScheme.onBackground,
+                color: Theme.of(context).colorScheme.onSurface,
               ),
             ),
             for (final step in meal.steps)

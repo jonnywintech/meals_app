@@ -48,14 +48,14 @@ class MealScreen extends StatelessWidget {
             Text(
               'Uh oh ... nothing here!',
               style: Theme.of(context).textTheme.headlineLarge!.copyWith(
-                color: Theme.of(context).colorScheme.onBackground,
+                color: Theme.of(context).colorScheme.onSurface,
               ),
             ),
             SizedBox(height: 17),
             Text(
               'Try selecting a different category!',
               style: Theme.of(context).textTheme.bodyLarge!.copyWith(
-                color: Theme.of(context).colorScheme.onBackground,
+                color: Theme.of(context).colorScheme.onSurface,
               ),
             ),
           ],
