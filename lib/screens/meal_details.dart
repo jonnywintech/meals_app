@@ -41,7 +41,19 @@ class MealDetailsScreen extends ConsumerWidget {
                 ),
               );
             },
-            icon: Icon(isFavorite ? Icons.star : Icons.star_border),
+            icon: AnimatedSwitcher(
+              duration: Duration(milliseconds: 300),
+              child: Icon(
+                isFavorite ? Icons.star : Icons.star_border,
+                key: ValueKey(
+                  isFavorite,
+                ), // key added so flutter can see difference between icons so animation can happen
+              ),
+              transitionBuilder: (child, animation) => RotationTransition(
+                turns: Tween<double>(begin: 0.5, end: 1.0).animate(animation),
+                child: child,
+              ),
+            ),
           ),
         ],
       ),
